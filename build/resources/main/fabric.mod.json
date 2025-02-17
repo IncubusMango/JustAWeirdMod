@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "justaweirdmod",
+	"version": "1.0.0",
+	"name": "JustAWeirdMod",
+	"description": "This is a private mod that i am making for my server",
+	"authors": [
+		"JustAWeirdMango"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": ""
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/justaweirdmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.justaweirdmango.powersplus.JustAWeirdMod"
+		],
+		"fabric-datagen": [
+			"net.justaweirdmango.powersplus.JustAWeirdModDataGenerator"
+		],
+		"client": [
+			"net.justaweirdmango.powersplus.JustAWierdModClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
